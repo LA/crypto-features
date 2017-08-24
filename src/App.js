@@ -210,7 +210,8 @@ class App extends Component {
                                 {item.title}
                               </a>
                             </td>
-                            <td className='source'>
+                            <td style={{width: 5}}></td>
+                            <td className='source' style={{paddingRight: 15}}>
                               <span>
                                 (
                                 <a href='./'>
