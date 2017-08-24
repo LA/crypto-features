@@ -182,7 +182,7 @@ class App extends Component {
                       </td>
                       <td style={{textAlign: 'right', paddingRight: 4}}>
                         <span className='powered-by'>
-                          powered by <a target='_blank' style={{color: 'gray'}} href='./'>NewsAPI.org</a>
+                          powered by <a target='_blank' style={{color: 'gray'}} href='https://newsapi.org/'>NewsAPI.org</a>
                         </span>
                       </td>
                     </tr>
