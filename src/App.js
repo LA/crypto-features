@@ -218,6 +218,7 @@ class App extends Component {
                                 {')'}
                               </span>
                             </td>
+                            <td></td>
                           </tr>
                           <tr>
                             <td colSpan='2'></td>
