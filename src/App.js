@@ -8,7 +8,7 @@ class App extends Component {
     const feed = [
       {
         title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
+        source: 'washingtonpost.com',
         author: 'Marky Mark',
         timeAgo: '25min',
       },
@@ -209,17 +209,16 @@ class App extends Component {
                               <a href='./'>
                                 {item.title}
                               </a>
-                            </td>
-                            <td style={{width: 5}}></td>
-                            <td className='source' style={{paddingRight: 15}}>
-                              <span>
-                                (
+
+                              <span className='source' style={{color: 'gray'}}>
+                                {' ' + '('}
                                 <a href='./'>
                                   {item.source}
                                 </a>
-                                )
+                                {')'}
                               </span>
                             </td>
+                            <td style={{width: 5}}></td>
                           </tr>
                           <tr>
                             <td colSpan='2'></td>
