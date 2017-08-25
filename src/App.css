@@ -11,8 +11,8 @@ body {
   text-decoration: none;
 }
 
-.source a:active {
-  color: gray;
+.source a {
+  color: gray !important;
 }
 
 .source a:hover {

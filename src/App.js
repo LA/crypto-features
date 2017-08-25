@@ -218,7 +218,6 @@ class App extends Component {
                                 {')'}
                               </span>
                             </td>
-                            <td style={{width: 5}}></td>
                           </tr>
                           <tr>
                             <td colSpan='2'></td>
