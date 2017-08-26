@@ -131,6 +131,15 @@ class App extends Component {
   }
 
   render() {
+    const poweredbyNewsAPI =
+    (
+      <td style={{textAlign: 'right', paddingRight: 4}}>
+        <span className='powered-by'>
+          semi-powered by <a target='_blank' style={{color: 'gray'}} href='https://newsapi.org/'>NewsAPI.org</a>
+        </span>
+      </td>
+    );
+
     return (
       <center style={{backgroundColor: '#1B1B1B'}}>
         <table className='table' style={{paddingTop: 10}}>
@@ -149,11 +158,6 @@ class App extends Component {
                       <td>
                         <span className='site-title'>
                           Crypto Features News
-                        </span>
-                      </td>
-                      <td style={{textAlign: 'right', paddingRight: 4}}>
-                        <span className='powered-by'>
-                          semi-powered by <a target='_blank' style={{color: 'gray'}} href='https://newsapi.org/'>NewsAPI.org</a>
                         </span>
                       </td>
                     </tr>
