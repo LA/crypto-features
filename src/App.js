@@ -176,13 +176,13 @@ class App extends Component {
 
   render() {
     return (
-      <center style={{backgroundColor: 'black'}}>
+      <center style={{backgroundColor: '#1B1B1B'}}>
         <table className='table' style={{paddingTop: 10}}>
           <tbody>
             <tr>
 
               <td>
-                <table style={{backgroundColor: 'black', justifyContent: 'center'}} width='100%'>
+                <table style={{justifyContent: 'center'}} width='100%'>
                   <tbody>
                     <tr>
                       <td style={{width: 25}}>
