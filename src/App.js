@@ -11,13 +11,13 @@ class App extends Component {
     const feed = [
       {
         title: "Ethereum's 'Metropolis' Upgrade Could Still Be Months Away                                        ",
-        source: 'www.coindesk.com',
+        source: 'coindesk.com',
         author: 'Marky Mark',
         timeAgo: '25min',
       },
       {
         title: 'Bitcoin Prices Rise But Fall Short of All-Time High',
-        source: 'cnn.com',
+        source: 'cryptoinsider.com',
         author: 'Marky Mark',
         timeAgo: '25min',
       },
@@ -170,8 +170,7 @@ class App extends Component {
       if (err) { console.error(err); return; }
       const json = JSON.parse(body);
       json.forEach((coin) => prices.push(coin));
-      console.log(prices);
-      this.setState({prices: prices});
+      this.setState({prices});
     });
   }
 
@@ -249,7 +248,7 @@ class App extends Component {
               <div style={{marginTop: 25, marginLeft: 25, display: 'inline-block'}}>
                 {this.state.prices.map((coin, index) => {
                   return (
-                    <p style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: ${format('#,###.00', coin.price_usd)} (${format('#,###.', coin.market_cap_usd)})</p>
+                    <p key={index} style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: ${format('#,###.00', coin.price_usd)} - (${format('#,###.', coin.market_cap_usd)}) - <a style={{color: (coin.percent_change_24h[0] == '-') ? 'red' : 'green'}} >{(coin.percent_change_24h[0] == '-') ? '↓' + coin.percent_change_24h : '↑' + coin.percent_change_24h}%</a> 24H</p>
                   );
                 })}
                 <p className='powered-by' style={{fontSize: 10, textAlign: 'left'}}>
