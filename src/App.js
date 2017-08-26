@@ -10,149 +10,105 @@ class App extends Component {
     super();
     const feed = [
       {
-        title: "Ethereum's 'Metropolis' Upgrade Could Still Be Months Away                                        ",
-        source: 'coindesk.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Storj Deflates < $1; Siacoin in Recovery?",
+        "url": "https://www.cryptocoinsnews.com/storj-deflates-1-siacoin-recovery/",
+        "source": "cryptocoinsnews.com"
       },
       {
-        title: 'Bitcoin Prices Rise But Fall Short of All-Time High',
-        source: 'cryptoinsider.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Ethereum-Based Invoice Finance Platform Hive Raises Over US$8 Million",
+        "url": "https://coinjournal.net/ethereum-invoice-finance-platform-hive-us8-million/",
+        "source": "coinjournal.net"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Could blockchain startups change our everyday routine in big ways?",
+        "url": "https://cryptoinsider.com/could-blockchain-startups-change-our-routine/",
+        "source": "cryptoinsider.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Daily Roundup – August 23, 2017",
+        "url": "https://cryptoinsider.com/daily-roundup-august-23-2017/",
+        "source": "cryptoinsider.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Blockchain's 4 Biggest Assumptions                                        ",
+        "url": "https://www.coindesk.com/blockchains-4-biggest-assumptions/",
+        "source": "coindesk.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Ethereum's 'Metropolis' Upgrade Could Still Be Months Away",
+        "url": "https://www.coindesk.com/ethereums-metropolis-upgrade-still-months-away/",
+        "source": "coindesk.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "From Tiigrihüpe to Estcoin – The digital evolution of “Europe’s Silicon Valley”",
+        "url": "https://cryptoinsider.com/estcoin-the-digital-evolution-of-europe-silicon-valley/",
+        "source": "cryptoinsider.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Major domestic conglomerates match Japan’s blockchain drive",
+        "url": "https://cryptoinsider.com/major-domestic-conglomerates-matching-japanese-governments-blockchain-drive/",
+        "source": "cryptoinsider.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "China's New Fundraising Rules Could Lead to ICO Investigations",
+        "url": "https://www.coindesk.com/chinas-new-fundraising-rules-lead-ico-investigations/",
+        "source": "coindesk.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "$44 Million in Ethereum Moved With $0.13 Fee, How Can Bitcoin...",
+        "url": "https://coinjournal.net/44-million-ethereum-moved-0-13-fee-can-bitcoin-reach-similar-scalability/",
+        "source": "coinjournal.net"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Bitcoin, Ether Prices Rise Pushes Crypto Market Cap Above US$150B",
+        "url": "https://coinjournal.net/bitcoin-ether-prices-rise-pushes-crypto-market-cap-us150b/",
+        "source": "coinjournal.net"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Op-Ed: Bitcoin Passed $4,000, but What’s the Real Reason Why?",
+        "url": "https://coinjournal.net/price-watch-bitcoin-passed-4000-whats-real-reason/",
+        "source": "coinjournal.net"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "First Bitcoin Capital Responds to SEC Suspension",
+        "url": "https://www.cryptocoinsnews.com/first-bitcoin-capital-responds-sec-suspension/",
+        "source": "cryptocoinsnews.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Viberate bringing live music to the blockchain",
+        "url": "https://cryptoinsider.com/viberate-bringing-live-music-to-the-blockchain/",
+        "source": "cryptoinsider.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Monero, Dash Prices Soar as Bitcoin Slips Below $4,300",
+        "url": "https://www.cryptocoinsnews.com/monero-dash-prices-soar-bitcoin-slips-4300/",
+        "source": "cryptocoinsnews.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Replay attacks explained",
+        "url": "https://cryptoinsider.com/replay-attacks-explained/",
+        "source": "cryptoinsider.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "BitTorrent Creator Bram Cohen: Bitcoin Miners are Butthurt Over SegWit",
+        "url": "https://coinjournal.net/bittorrent-creator-bram-cohen-bitcoin-miners-butthurt-segwit/",
+        "source": "coinjournal.net"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Risk or Reward: What It Takes for an Exchange to Cash In on a New Currency?",
+        "url": "https://www.coindesk.com/risk-reward-takes-exchange-cash-new-currency/",
+        "source": "coindesk.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
+        "title": "Bitcoin ETF Now More Likelier than Ever, Says Bloomberg Analyst",
+        "url": "https://www.cryptocoinsnews.com/bitcoin-etf-now-likely-bloomberg-analyst-says/",
+        "source": "cryptocoinsnews.com"
       },
       {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
-      },
-      {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
-      },
-      {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
-      },
-      {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
-      },
-      {
-        title: 'Ex-lottery worker who rigged winnings gets 25 years in prison',
-        source: 'cnn.com',
-        author: 'Marky Mark',
-        timeAgo: '25min',
-      },
+        "title": "India Continues to Ponder Bitcoin Regulations as Cybercrime Soars",
+        "url": "https://coinjournal.net/india-continues-ponder-bitcoin-regulations-cybercrime-soars/",
+        "source": "coinjournal.net"
+      }
     ];
 
     this.state = {
@@ -221,13 +177,13 @@ class App extends Component {
                             </td>
                             <td style={{width: 5}}></td>
                             <td className='title'>
-                              <a href='./'>
+                              <a className='title-link' href={item.url}>
                                 {item.title}
                               </a>
 
                               <span className='source' style={{color: 'gray'}}>
                                 {' ' + '('}
-                                <a href='./'>
+                                <a href={'http://' + item.source}>
                                   {item.source}
                                 </a>
                                 {')'}

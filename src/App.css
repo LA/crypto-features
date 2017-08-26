@@ -5,9 +5,23 @@ body {
   color: white;
 }
 
+.title {
+  font-size: 12px;
+  color: white;
+}
+
+.title-link {
+  color: white;
+  text-decoration: none;
+}
+
+.title:visited {
+  color: gray;
+}
+
 .source {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 12px;
+  font-size: 10px;
   color: gray;
   text-decoration: none;
 }
@@ -18,16 +32,6 @@ body {
 
 .source a:hover {
   text-decoration: underline;
-}
-
-.title a {
-  font-size: 12px;
-  color: white;
-  text-decoration: none;
-}
-
-.title a:visited {
-  color: gray;
 }
 
 .index {
