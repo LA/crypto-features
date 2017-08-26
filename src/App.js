@@ -249,7 +249,7 @@ class App extends Component {
               <div style={{marginTop: 25, marginLeft: 25, display: 'inline-block'}}>
                 {this.state.prices.map((coin, index) => {
                   return (
-                    <p style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: {coin.price_usd} USD ({format('#,###.', coin.market_cap_usd)} USD)</p>
+                    <p style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: ${format('#,###.00', coin.price_usd)} (${format('#,###.', coin.market_cap_usd)})</p>
                   );
                 })}
                 <p className='powered-by' style={{fontSize: 10, textAlign: 'left'}}>
