@@ -28,6 +28,7 @@ body {
 
 .source a {
   color: gray !important;
+  text-decoration: none;
 }
 
 .source a:hover {
