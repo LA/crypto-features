@@ -27,7 +27,7 @@ class App extends Component {
       this.setState({prices});
     });
 
-    request({url: 'https://192.241.220.133:6501/'}, (err, response, body) => {
+    request({url: 'http://192.241.220.133:6501/'}, (err, response, body) => {
       if (err) { console.error(err); return; }
       const json = JSON.parse(body);
       this.setState({feed: json});
