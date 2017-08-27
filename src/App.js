@@ -27,7 +27,7 @@ class App extends Component {
       this.setState({prices});
     });
 
-    request({url: 'http://192.241.220.133:6501/'}, (err, response, body) => {
+    request({url: 'https://192.241.220.133:6501/'}, (err, response, body) => {
       if (err) { console.error(err); return; }
       const json = JSON.parse(body);
       this.setState({feed: json});
@@ -91,7 +91,7 @@ class App extends Component {
 
                               <span className='source' style={{color: 'gray'}}>
                                 {' ' + '('}
-                                <a href={'http://' + item.source}>
+                                <a href={'https://' + item.source}>
                                   {item.source}
                                 </a>
                                 {')'}
