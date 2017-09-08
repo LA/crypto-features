@@ -110,9 +110,12 @@ class App extends Component {
 
             <div style={{marginLeft: 'auto'}}>
               <div style={{marginTop: 25, marginLeft: 25, display: 'inline-block'}}>
+                <p style={{color: 'white', textAlign: 'left', fontSize: 10}}>
+                  Name: BTC Equiv ($USD) - $USD MKT Cap - % Change 24H
+                </p>
                 {this.state.prices.map((coin, index) => {
                   return (
-                    <p key={index} style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: ${format('#,###.00', coin.price_usd)} - (${format('#,###.', coin.market_cap_usd)}) - <a style={{color: (coin.percent_change_24h[0] == '-') ? 'red' : 'green'}} >{(coin.percent_change_24h[0] == '-') ? '↓' + coin.percent_change_24h : '↑+' + coin.percent_change_24h}%</a> 24H</p>
+                    <p key={index} style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: {format('#.00000000', coin.price_btc)} (${format('#,###.00', coin.price_usd)}) - ${format('#,###.', coin.market_cap_usd)} - <a style={{color: (coin.percent_change_24h[0] == '-') ? 'red' : 'green'}} >{(coin.percent_change_24h[0] == '-') ? '↓' + coin.percent_change_24h : '↑+' + coin.percent_change_24h}%</a> 24H</p>
                   );
                 })}
                 <p className='powered-by' style={{fontSize: 10, textAlign: 'left'}}>
