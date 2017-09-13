@@ -5,6 +5,10 @@ body {
   color: white;
 }
 
+.site-title {
+  font-weight: 400;
+}
+
 .title-link {
   color: white;
   text-decoration: none;

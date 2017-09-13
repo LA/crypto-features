@@ -39,7 +39,7 @@ class App extends Component {
     (
       <td style={{textAlign: 'right', paddingRight: 4}}>
         <span className='powered-by'>
-          semi-powered by <a target='_blank' style={{color: 'gray'}} href='https://newsapi.org/'>NewsAPI.org</a>
+          semi-powered by <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://newsapi.org/'>NewsAPI.org</a>
         </span>
       </td>
     );
@@ -60,8 +60,8 @@ class App extends Component {
                         </a>
                       </td>
                       <td>
-                        <span className='site-title'>
-                          Crypto Features News
+                        <span>
+                          <h1 className='site-title'>Crypto Features News</h1>
                         </span>
                       </td>
                     </tr>
@@ -90,7 +90,7 @@ class App extends Component {
                               </a>
 
                               <span className='source' style={{color: 'gray'}}>
-                                {' ' + '('}
+                                {' ('}
                                 <a href={'https://' + item.source}>
                                   {item.source}
                                 </a>
@@ -115,16 +115,16 @@ class App extends Component {
                 </p>
                 {this.state.prices.map((coin, index) => {
                   return (
-                    <p key={index} style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: {format('#.00000000', coin.price_btc)} (${format('#,###.00', coin.price_usd)}) - ${format('#,###.', coin.market_cap_usd)} - <a style={{color: (coin.percent_change_24h[0] == '-') ? 'red' : 'green'}} >{(coin.percent_change_24h[0] == '-') ? '↓' + coin.percent_change_24h : '↑+' + coin.percent_change_24h}%</a> 24H</p>
+                    <p key={index} style={{color: 'white', textAlign: 'left', fontSize: 10}}>{coin.name}: {format('#.00000000', coin.price_btc)} (${format('#,###.00', coin.price_usd)}) - ${format('#,###.', coin.market_cap_usd)} - <a style={{color: (coin.percent_change_24h[0] === '-') ? 'red' : 'green'}} >{(coin.percent_change_24h[0] === '-') ? '↓' + coin.percent_change_24h : '↑+' + coin.percent_change_24h}%</a> 24H</p>
                   );
                 })}
                 <p className='powered-by' style={{fontSize: 10, textAlign: 'left'}}>
-                  powered by <a target='_blank' style={{color: 'gray'}} href='https://coinmarketcap.com/'>CoinMarketCap.com</a>
+                  powered by <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://coinmarketcap.com/'>CoinMarketCap.com</a>
                 </p>
               </div>
               <div style={{marginTop: 25, marginLeft: 25, display: 'inline-block'}}>
                 <p className='powered-by' style={{fontSize: 10}}>
-                  send me feedback <a target='_blank' style={{color: 'gray'}} href='https://twitter.com/adarbutel'>@adarbutel</a>
+                  send me feedback <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://twitter.com/adarbutel'>@adarbutel</a>
                 </p>
               </div>
             </div>
