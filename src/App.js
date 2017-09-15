@@ -66,8 +66,8 @@ class App extends Component {
     );
 
     return (
-      <center style={{backgroundColor: '#1B1B1B'}}>
-        <table className='table' style={{paddingTop: 10}}>
+      <center style={{backgroundColor: '#1B1B1B', width: '100%', height: '100%'}}>
+        <table className='table' style={{paddingTop: 10, backgroundColor: '#1B1B1B'}}>
           <tbody>
             <tr>
 
@@ -212,7 +212,7 @@ class App extends Component {
                 </p>
                 <img style={{backgroundColor: 'white', padding: 5}} src={ltcQR} />
               </div>
-              <div style={{marginTop: 45, textAlign: 'center'}}>
+              <div style={{marginTop: 45, marginLeft: 30, marginRight: 30, textAlign: 'center'}}>
                 <p style={{fontSize: 10}}>
                   <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>XMR: 47jyXhag5vNMZR6NcDmmifXK3AmMD6c3xYeAHXHSpM52gsisCbZfVpsgT5FFGADskffiQ68dwghUiC9mWGzT9aFZ1aFGLrr
                   </a>
