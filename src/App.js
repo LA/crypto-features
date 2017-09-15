@@ -191,28 +191,28 @@ class App extends Component {
                   send me feedback <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://twitter.com/adarbutel'>@adarbutel</a>
                 </p>
               </div>
-              <div style={{marginTop: 45, textAlign: 'center'}}>
+              <div style={{marginTop: 45, textAlign: 'left'}}>
                 <p style={{fontSize: 10}}>
                   <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>BTC: 18gqDMJQGR21AyR5FJ9wi6QofbD2CwpfPq
                   </a>
                 </p>
                 <img style={{maxWidth: 200, backgroundColor: 'white', padding: 5}} src={btcQR} />
               </div>
-              <div style={{marginTop: 45, textAlign: 'center'}}>
+              <div style={{marginTop: 45, textAlign: 'left'}}>
                 <p style={{fontSize: 10}}>
                   <a href='https://etherscan.io/address/0xa1a79545df48860c475d8df4a2c947920ec309e6' target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>ETH: 0xA1a79545df48860c475D8Df4A2C947920EC309e6
                   </a>
                 </p>
                 <img style={{backgroundColor: 'white', padding: 5}} src={ethQR} />
               </div>
-              <div style={{marginTop: 45, textAlign: 'center'}}>
+              <div style={{marginTop: 45, textAlign: 'left'}}>
                 <p style={{fontSize: 10}}>
                   <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>LTC: LN5WevGS9HmBdBpNWo9Mp9vGN2RAY2ZoPf
                   </a>
                 </p>
                 <img style={{backgroundColor: 'white', padding: 5}} src={ltcQR} />
               </div>
-              <div style={{marginTop: 45, marginLeft: 30, marginRight: 30, textAlign: 'center'}}>
+              <div style={{marginTop: 45, textAlign: 'left'}}>
                 <p style={{fontSize: 10}}>
                   <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>XMR: 47jyXhag5vNMZR6NcDmmifXK3AmMD6c3xYeAHXHSpM52gsisCbZfVpsgT5FFGADskffiQ68dwghUiC9mWGzT9aFZ1aFGLrr
                   </a>
