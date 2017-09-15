@@ -214,7 +214,7 @@ class App extends Component {
               </div>
               <div style={{marginTop: 45, textAlign: 'left'}}>
                 <p style={{fontSize: 10}}>
-                  <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>XMR: 47jyXhag5vNMZR6NcDmmifXK3AmMD6c3xYeAHXHSpM52gsisCbZfVpsgT5FFGADskffiQ68dwghUiC9mWGzT9aFZ1aFGLrr
+                  <a className='xmr-ad' target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>XMR: 47jyXhag5vNMZR6NcDmmifXK3AmMD6c3xYeAHXHSpM52gsisCbZfVpsgT5FFGADskffiQ68dwghUiC9mWGzT9aFZ1aFGLrr
                   </a>
                 </p>
                 <img style={{backgroundColor: 'white', padding: 5}} src={xmrQR} />
