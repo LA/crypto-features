@@ -5,9 +5,10 @@ import ethQR from './ethQR.png';
 import ltcQR from './ltcQR.png';
 import xmrQR from './xmrQR.png';
 import './App.css';
-
 import format from 'number-format.js';
 import request from 'request';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-89193904-2');
 
 class App extends Component {
   constructor() {
@@ -20,6 +21,10 @@ class App extends Component {
     };
 
     document.title = 'News'
+
+    ReactGA.set({ page: window.location.pathname + window.location.search });
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
   componentDidMount() {
