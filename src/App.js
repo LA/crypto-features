@@ -183,8 +183,15 @@ class App extends Component {
 
                   const btcEquiv = coin.price_btc;
 
+                  const pctChange = coin.percent_change_24h || '?';
+                  let color = (pctChange[0] === '-') ? 'red' : 'green';
+                  color = (pctChange[0] === '?') ? 'white' : color;
+                  let arrow = (pctChange[0] === '-') ? '↓' + pctChange : '↑+' + pctChange;
+                  arrow = (pctChange[0] === '?') ? '🤷‍♂️ ' : arrow;
+
+
                   return (
-                    <p key={index} style={{color: 'white', textAlign: 'left', fontSize: 10}}>{index+1}. {coin.name}: {btcEquiv} (${coinPrice}) - ${coinMarketCap} - <a style={{color: (coin.percent_change_24h[0] === '-') ? 'red' : 'green'}} >{(coin.percent_change_24h[0] === '-') ? '↓' + coin.percent_change_24h : '↑+' + coin.percent_change_24h}%</a> 24H</p>
+                    <p key={index} style={{color: 'white', textAlign: 'left', fontSize: 10}}>{index+1}. {coin.name}: {btcEquiv} (${coinPrice}) - ${coinMarketCap} - <a style={{color: color}} >{arrow}%</a> 24H</p>
                   );
                 })}
                 <p className='powered-by' style={{fontSize: 10, textAlign: 'left'}}>
@@ -205,7 +212,7 @@ class App extends Component {
               </div>
               <div style={{marginTop: 45, textAlign: 'left'}}>
                 <p style={{fontSize: 10}}>
-                  <a href='https://etherscan.io/address/0xa1a79545df48860c475d8df4a2c947920ec309e6' target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>ETH: 0xA1a79545df48860c475D8Df4A2C947920EC309e6
+                  <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>ETH: 0xA1a79545df48860c475D8Df4A2C947920EC309e6
                   </a>
                 </p>
                 <img style={{backgroundColor: 'white', padding: 5}} src={ethQR} />
