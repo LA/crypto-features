@@ -4,6 +4,8 @@ import btcQR from './btcQR.png';
 import ethQR from './ethQR.png';
 import ltcQR from './ltcQR.png';
 import xmrQR from './xmrQR.png';
+import steemQR from './steemQR.png';
+
 import './App.css';
 import format from 'number-format.js';
 import request from 'request';
@@ -202,6 +204,13 @@ class App extends Component {
                 <p className='powered-by' style={{fontSize: 10}}>
                   send me feedback <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://twitter.com/adarbutel'>@adarbutel</a>
                 </p>
+              </div>
+              <div style={{marginTop: 45, textAlign: 'left'}}>
+                <p style={{fontSize: 10}}>
+                  <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>Steem: @throne
+                  </a>
+                </p>
+                <img style={{maxWidth: 200, backgroundColor: 'white', padding: 5}} src={steemQR} />
               </div>
               <div style={{marginTop: 45, textAlign: 'left'}}>
                 <p style={{fontSize: 10}}>
