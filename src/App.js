@@ -22,7 +22,7 @@ class App extends Component {
       globalData: {},
     };
 
-    document.title = 'News'
+    document.title = 'Crypto Features -  Cryptocurrency Prices & Cryptocurrency News'
 
     ReactGA.set({ page: window.location.pathname + window.location.search });
 
