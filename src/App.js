@@ -49,10 +49,10 @@ class App extends Component {
       const btcPercentage = json['bitcoin_percentage_of_market_cap'];
       const activeCurrencies = json['active_currencies'];
       const globalData = {
-        totalMarketCap: totalMarketCap,
-        total24HVolume: total24HVolume,
-        btcPercentage: btcPercentage,
-        activeCurrencies: activeCurrencies,
+        totalMarketCap,
+        total24HVolume,
+        btcPercentage,
+        activeCurrencies,
       };
       this.setState({globalData});
     });
