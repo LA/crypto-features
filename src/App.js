@@ -219,7 +219,12 @@ class App extends Component {
               {
                 this.state.contributeOpen
                 ?
-                <div>
+                  <div style={{margin: '45px auto', textAlign: 'center'}}>
+                    <p style={{fontSize: 10}}>
+                      <a>Buy more crypto :)</a>
+                    </p>
+                  </div>
+                  /*<div>
                   <div style={{marginTop: 45, textAlign: 'left'}}>
                     <p style={{fontSize: 10}}>
                       <a target='_blank' rel='noopener noreferrer' style={{color: 'white'}}>Steem: @throne
@@ -255,7 +260,7 @@ class App extends Component {
                     </p>
                     <img style={{backgroundColor: 'white', padding: 5}} src={xmrQR} />
                   </div>
-                </div>
+                </div>*/
                 :
                 null
               }
