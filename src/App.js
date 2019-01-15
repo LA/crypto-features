@@ -115,7 +115,7 @@ class App extends Component {
                             </td>
                             <td style={{width: 5}}></td>
                             <td className='title'>
-                              <a className='title-link' href={item.url}>
+                              <a className='title-link' href={item.url.includes("http" ? item.url : "http://"+item.source+item.url)}>
                                 {item.title}
                               </a>
 
