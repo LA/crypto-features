@@ -199,7 +199,10 @@ class App extends Component {
                   );
                 })}
                 <p style={{fontSize: 10, textAlign: 'left'}}>
-                  powered by <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://coinmarketcap.com/'>CoinMarketCap.com</a>
+                  news powered by <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://api.cryptofeatures.com/'>api.cryptofeatures.com</a>
+                </p>
+                <p style={{fontSize: 10, textAlign: 'left'}}>
+                  prices powered by <a target='_blank' rel="noopener noreferrer" style={{color: 'gray'}} href='https://coinmarketcap.com/'>CoinMarketCap.com</a>
                 </p>
                 <p style={{fontSize: 10, textAlign: 'left'}}>
                   <a target='_blank' rel="noopener noreferrer" style={{color: 'gray', textDecoration: 'underline', cursor: 'pointer'}}
